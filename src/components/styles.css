@@ -1,0 +1,90 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.form-group input {
+  padding: 18px;
+  border: 0;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.btn {
+  border: 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-disable {
+  cursor: not-allowed;
+}
+
+.btn-save {
+  background-color: green;
+  color: white;
+}
+
+.btn-disabled {
+  background-color: rgb(155, 155, 155);
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.btn-reset {
+  background-color: rgb(206, 185, 69);
+  color: white;
+}
+
+.error {
+  margin-top: 10px;
+  color: red;
+}
+
+.btn-delete {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.loader-container {
+  height: calc(100vh - 101px);
+  position: absolute;
+  width: calc(100vw - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 5px solid #a79f3c;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

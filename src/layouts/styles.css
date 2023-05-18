@@ -1,0 +1,19 @@
+.navbar {
+    padding: 20px;
+    background: black;
+}
+
+.navbar a {
+    background: white;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+}
