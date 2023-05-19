@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles.css";
 
 export const InputField = ({
   type,
@@ -11,7 +12,7 @@ export const InputField = ({
   error,
 }) => {
   return (
-    <div className="input-field">
+    <div className="form-group">
       <label htmlFor={id}>{label}</label>
       <input
         type={type}
