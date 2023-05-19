@@ -79,6 +79,7 @@ export const UserForm = ({ user }) => {
         placeholder="place your first name"
         label="First name"
         name="firstName"
+        id="firstName"
         onChange={handleChange}
         error={validations.firstName}
       />
@@ -88,6 +89,7 @@ export const UserForm = ({ user }) => {
         placeholder="place your last name"
         label="Last name"
         name="lastName"
+        id="lastName"
         onChange={handleChange}
         error={validations.lastName}
       />
@@ -97,6 +99,7 @@ export const UserForm = ({ user }) => {
         placeholder="place your email"
         label="Email"
         name="email"
+        id="email"
         onChange={handleChange}
         error={validations.email}
       />
@@ -106,6 +109,7 @@ export const UserForm = ({ user }) => {
         placeholder="place your phone"
         label="Phone"
         name="phone"
+        id="phone"
         onChange={handleChange}
         error={validations.phone}
       />
@@ -115,21 +119,22 @@ export const UserForm = ({ user }) => {
         placeholder="place your avatar"
         label="Avatar"
         name="avatar"
+        id="avatar"
         onChange={handleChange}
         error={validations.avatar}
       />
       <div className="actions-container">
         <div>
           <Button
-            id={"btnSubmit"}
-            type={"Submit"}
+            id="btnSubmit"
+            type="Submit"
             className="btn-save mr-10"
             value="Save"
             isDisabled={!validateAll(formValues)}
             clickHandler={saveClickHandler}
           />
           <Button
-            id={"btnReset"}
+            id="btnReset"
             className="btn-reset"
             value="Reset"
             isDisabled={false}
@@ -138,7 +143,7 @@ export const UserForm = ({ user }) => {
         </div>
         {user && (
           <Button
-            id={"btnDelete"}
+            id="btnDelete"
             className="btn-delete"
             value="Delete"
             isDisabled={false}
